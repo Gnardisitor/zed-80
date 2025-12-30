@@ -5,7 +5,7 @@
 __Previews
 *.PrjPcbStructure
 *.Dat
-*.REP 
+*.REP
 *.TLT
 *.LOG
 *.log
@@ -16,6 +16,7 @@ __Previews
 Project\ Outputs
 Project\ Logs
 Project Outputs for*
+docs/
 
 #History
 History
