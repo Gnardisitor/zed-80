@@ -1,0 +1,608 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "3141ac47-310a-4fc3-ab78-4d4b51ab76a4")
+	(paper "A4")
+	(lib_symbols)
+	(junction
+		(at 127 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "99940d2b-2b56-42d3-b07c-8e86582b99a9")
+	)
+	(junction
+		(at 114.3 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d16b3726-69fb-41fa-a190-7b120cd19ef9")
+	)
+	(junction
+		(at 59.69 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e6a6cebe-a08e-4ae1-af82-7591d4075294")
+	)
+	(bus
+		(pts
+			(xy 114.3 63.5) (xy 139.7 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24304601-fb05-41d0-8128-510783010f1a")
+	)
+	(bus
+		(pts
+			(xy 139.7 114.3) (xy 127 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2760cc65-840d-4784-87c9-acbbe1c671f4")
+	)
+	(wire
+		(pts
+			(xy 157.48 156.21) (xy 157.48 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29be482e-852e-40e1-b9a6-fcd6d0fc0078")
+	)
+	(wire
+		(pts
+			(xy 57.15 156.21) (xy 157.48 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32fbe953-6910-4cb0-94fa-b5500b887815")
+	)
+	(wire
+		(pts
+			(xy 76.2 76.2) (xy 139.7 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38429306-0b0c-4b05-81ce-e710e71ffc7e")
+	)
+	(wire
+		(pts
+			(xy 158.75 92.71) (xy 59.69 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39c74632-b0d1-43a4-b5b1-f8d3af0599d4")
+	)
+	(wire
+		(pts
+			(xy 59.69 88.9) (xy 59.69 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ba02042-f562-4ecd-9db7-497b021ceca4")
+	)
+	(wire
+		(pts
+			(xy 59.69 158.75) (xy 160.02 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "527dc633-1769-40f5-b69c-7e05d9e69b08")
+	)
+	(wire
+		(pts
+			(xy 76.2 86.36) (xy 139.7 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58e23a18-5aa1-44f9-a2bb-28e42c546542")
+	)
+	(wire
+		(pts
+			(xy 76.2 73.66) (xy 139.7 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "623b44fb-a57c-4b9c-8dc3-37ae4d68900f")
+	)
+	(bus
+		(pts
+			(xy 139.7 127) (xy 114.3 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65452395-5d00-4d81-8633-77b92df135b3")
+	)
+	(wire
+		(pts
+			(xy 88.9 81.28) (xy 76.2 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b98e250-d361-486c-a14b-289d853fe674")
+	)
+	(bus
+		(pts
+			(xy 127 50.8) (xy 127 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "772df465-9b40-41c1-a09e-e4116fdbbb7b")
+	)
+	(wire
+		(pts
+			(xy 139.7 138.43) (xy 88.9 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b14aba5-8e52-4c53-80a3-e61c637b3702")
+	)
+	(wire
+		(pts
+			(xy 59.69 92.71) (xy 59.69 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93012818-5a2f-4d18-ac16-3fcdf450cd47")
+	)
+	(wire
+		(pts
+			(xy 76.2 78.74) (xy 139.7 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c1f20be-2843-4cc4-b525-dacae5a1d0de")
+	)
+	(wire
+		(pts
+			(xy 88.9 138.43) (xy 88.9 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae858e34-4216-4d03-a7ca-475bb1fe3d72")
+	)
+	(bus
+		(pts
+			(xy 76.2 50.8) (xy 127 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2e5c7d0-b776-41d7-8b7e-4193c5feae92")
+	)
+	(bus
+		(pts
+			(xy 76.2 63.5) (xy 114.3 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc8e069a-ab6a-4c9d-af66-711530319531")
+	)
+	(bus
+		(pts
+			(xy 114.3 63.5) (xy 114.3 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c08b0da0-8e17-4459-9909-b58642e0319f")
+	)
+	(wire
+		(pts
+			(xy 158.75 88.9) (xy 158.75 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd1d44a5-ed16-4769-8738-6d0f2c21adf1")
+	)
+	(wire
+		(pts
+			(xy 57.15 88.9) (xy 57.15 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d979e8bf-5bf5-4b4b-bdac-7c63e0987fa6")
+	)
+	(bus
+		(pts
+			(xy 127 50.8) (xy 139.7 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc89c6b3-aad2-490c-9a4d-aec771a5672f")
+	)
+	(wire
+		(pts
+			(xy 160.02 158.75) (xy 160.02 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e59f7ab8-20ff-4b62-bf05-b4d2d1465276")
+	)
+	(sheet
+		(at 139.7 38.1)
+		(size 38.1 50.8)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0dd3bd4c-9936-4de5-a023-cfe1468865a6")
+		(property "Sheetname" "USB-to-UART"
+			(at 139.7 37.3884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "usb_to_uart.kicad_sch"
+			(at 139.7 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "~{WR}" input
+			(at 158.75 88.9 270)
+			(uuid "bc9283b2-3d49-4532-a41e-734de14c458b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CLK" input
+			(at 139.7 86.36 180)
+			(uuid "2b2fa5a1-3145-4034-978a-f03c0c3bb16e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "D[0..7]" bidirectional
+			(at 139.7 63.5 180)
+			(uuid "06e6142d-495b-4919-8471-07a06589b358")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{IORQ}" input
+			(at 139.7 78.74 180)
+			(uuid "d8601932-e29c-433f-8349-1abc7c2d92d4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{INT}" output
+			(at 139.7 73.66 180)
+			(uuid "32826926-deba-40cb-a8cd-96c20e267417")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "A[0..15]" input
+			(at 139.7 50.8 180)
+			(uuid "ab04e7e1-28d4-44fd-9d6c-806e534c2cc5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{M1}" input
+			(at 139.7 76.2 180)
+			(uuid "412e7704-a9ca-4453-86a6-77d103072496")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "zed-80"
+				(path "/3141ac47-310a-4fc3-ab78-4d4b51ab76a4"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 139.7 101.6)
+		(size 38.1 50.8)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5947d7ea-a932-40b2-8c9a-417fed404f71")
+		(property "Sheetname" "Memory"
+			(at 139.7 100.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "memory.kicad_sch"
+			(at 139.7 152.9846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "D[0..7]" bidirectional
+			(at 139.7 127 180)
+			(uuid "a3a78b15-fa7c-4556-a8b7-31fd454192b1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{RD}" input
+			(at 157.48 152.4 270)
+			(uuid "12630b71-6fdd-4182-bddc-a69ed13f7fba")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{WR}" input
+			(at 160.02 152.4 270)
+			(uuid "a462cb91-842d-4075-9504-9f6922c37492")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{MREQ}" input
+			(at 139.7 138.43 180)
+			(uuid "c677a9bd-b182-4b93-98f3-7e6745a71af8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "A[0..15]" input
+			(at 139.7 114.3 180)
+			(uuid "b0ec7f7b-f9d0-4626-89e5-2ddf86448936")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "zed-80"
+				(path "/3141ac47-310a-4fc3-ab78-4d4b51ab76a4"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 38.1 38.1)
+		(size 38.1 50.8)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8027ce25-6d64-43c4-92ed-291bb3daa7a1")
+		(property "Sheetname" "CPU"
+			(at 38.1 37.3884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "cpu.kicad_sch"
+			(at 38.1 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "D[0..7]" bidirectional
+			(at 76.2 63.5 0)
+			(uuid "cd40f616-0552-466b-92bf-c41d3ca4fd5c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{WR}" output
+			(at 59.69 88.9 270)
+			(uuid "b8a95276-cab3-478a-9ddf-a804b86f2333")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "A[0..15]" output
+			(at 76.2 50.8 0)
+			(uuid "90dc435b-8526-45ec-9848-6c119403481d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CLK" output
+			(at 76.2 86.36 0)
+			(uuid "e77e8ff7-b575-4099-af7d-42023231171e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{MREQ}" output
+			(at 76.2 81.28 0)
+			(uuid "09d24d3a-b216-445d-aa47-c4fee479a4bb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{RD}" output
+			(at 57.15 88.9 270)
+			(uuid "74d8c544-e401-4a62-99a0-b6c3de7961b5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{INT}" input
+			(at 76.2 73.66 0)
+			(uuid "367bf585-87d8-44e2-a9f3-40d7a9ee9dd8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{M1}" output
+			(at 76.2 76.2 0)
+			(uuid "303272f2-0573-485b-9d1b-886354ddb1fe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{IORQ}" output
+			(at 76.2 78.74 0)
+			(uuid "e04c90bf-8950-4f84-9054-a7627fec24d2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "zed-80"
+				(path "/3141ac47-310a-4fc3-ab78-4d4b51ab76a4"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
