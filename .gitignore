@@ -14,6 +14,7 @@ Status\ Report.txt
 *.PcbDoc.htm
 *.SchDocPreview
 *.PcbDocPreview
+*.PrjPcbStructure
 
 # Lock files sometimes left behind
 .~lock.*
@@ -62,3 +63,4 @@ fp-info-cache
 
 # Datasheets
 docs/datasheets/
+docs/rom/
