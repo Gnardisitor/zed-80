@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "zed-80")
-		(date "2025-12-31")
-		(rev "A")
+		(date "2026-01-01")
+		(rev "B")
 		(company "Dragos Bajanica")
 	)
 	(lib_symbols
@@ -577,7 +577,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0cada975-0c2e-4af8-b00c-6bc813d3621f")
-		(property "Reference" "#PWR0101"
+		(property "Reference" "#PWR0103"
 			(at 48.26 168.91 0)
 			(effects
 				(font
@@ -627,7 +627,7 @@
 		(instances
 			(project "zed-80"
 				(path "/3141ac47-310a-4fc3-ab78-4d4b51ab76a4"
-					(reference "#PWR0101")
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
@@ -642,7 +642,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "43f3972c-1de9-401e-9088-426aa79e703f")
-		(property "Reference" "#PWR0103"
+		(property "Reference" "#PWR0102"
 			(at 35.56 187.96 0)
 			(effects
 				(font
@@ -692,7 +692,7 @@
 		(instances
 			(project "zed-80"
 				(path "/3141ac47-310a-4fc3-ab78-4d4b51ab76a4"
-					(reference "#PWR0103")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -772,7 +772,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4fb0c0ad-f9e0-44ad-9939-7c4ad5fc09f5")
-		(property "Reference" "#PWR0102"
+		(property "Reference" "#PWR0101"
 			(at 35.56 168.91 0)
 			(effects
 				(font
@@ -822,7 +822,7 @@
 		(instances
 			(project "zed-80"
 				(path "/3141ac47-310a-4fc3-ab78-4d4b51ab76a4"
-					(reference "#PWR0102")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)

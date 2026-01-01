@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Memory")
-		(date "2025-12-31")
-		(rev "A")
+		(date "2026-01-01")
+		(rev "B")
 		(company "Dragos Bajanica")
 	)
 	(lib_symbols

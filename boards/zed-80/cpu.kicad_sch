@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "CPU")
-		(date "2025-12-31")
-		(rev "A")
+		(date "2026-01-01")
+		(rev "B")
 		(company "Dragos Bajanica")
 	)
 	(lib_symbols
@@ -2132,12 +2132,24 @@
 		(end 203.2 76.2)
 		(stroke
 			(width 0)
-			(type default)
+			(type dash)
 		)
 		(fill
 			(type none)
 		)
 		(uuid 85bfb51e-5a09-41f7-a8b7-41c42866433c)
+	)
+	(rectangle
+		(start 215.9 25.4)
+		(end 241.3 76.2)
+		(stroke
+			(width 0)
+			(type dot)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 9b23b696-60a5-4d17-8ca8-e5a92a082454)
 	)
 	(rectangle
 		(start 25.4 88.9)
@@ -2184,6 +2196,17 @@
 		)
 		(uuid "8efc0298-3e1e-416f-b0d0-112224473ef2")
 	)
+	(text "PULL-UP"
+		(exclude_from_sim no)
+		(at 221.234 24.384 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.375)
+			)
+		)
+		(uuid "d838d45d-baa1-4339-afb8-7dafe4dad3ce")
+	)
 	(text "RESET"
 		(exclude_from_sim no)
 		(at 108.204 23.368 0)
@@ -2195,10 +2218,10 @@
 		)
 		(uuid "f43682ae-69e2-40f0-9f09-cf5cf6621a05")
 	)
-	(text_box "Power is provided to the unused inverters to ensure they remain stable at all times."
+	(text_box "Power is provided to the unused inverters to ensure they remain stable at all times. This prevents them from picking up any static signals.\n\nThe interrupt control line requires to be pulled up to VBUS to ensure it does not float. This is due to the M68B50P's interrupt pin being open drain, so leaving the line floating.\n\nAn extra pull-up for the clock is added due to the 74LS04 being weaker and only producing a maximum output voltage of 3.4V, which is not enough for a CMOS chip. "
 		(exclude_from_sim no)
-		(at 215.9 25.4 0)
-		(size 25.4 12.7)
+		(at 252.73 25.4 0)
+		(size 26.67 50.8)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2673,6 +2696,16 @@
 		)
 		(uuid "26f93f50-cf2a-4ad9-8b2f-1f471dceb9a5")
 	)
+	(wire
+		(pts
+			(xy 220.98 54.61) (xy 220.98 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a49f4c0-5bfe-4f23-9c21-2867f2a5a139")
+	)
 	(bus
 		(pts
 			(xy 76.2 139.7) (xy 76.2 142.24)
@@ -2982,6 +3015,16 @@
 			(type default)
 		)
 		(uuid "923ecd97-7d4c-4473-a46a-6baa06c9032e")
+	)
+	(wire
+		(pts
+			(xy 220.98 38.1) (xy 220.98 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92c5144f-98aa-490b-92ea-76cc76ae829d")
 	)
 	(wire
 		(pts
@@ -3355,6 +3398,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 38.1) (xy 231.14 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e56f42d8-b438-4ec1-a0c7-83dba79ced6d")
+	)
+	(wire
+		(pts
 			(xy 175.26 50.8) (xy 177.8 50.8)
 		)
 		(stroke
@@ -3473,6 +3526,16 @@
 		)
 		(uuid "f8f5cc4d-03de-4c84-9b4a-ecdf37d1c1b4")
 	)
+	(wire
+		(pts
+			(xy 231.14 54.61) (xy 231.14 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9a2f624-a248-458b-a8be-4018c93e86d0")
+	)
 	(label "~{RST}"
 		(at 38.1 172.72 0)
 		(effects
@@ -3482,26 +3545,6 @@
 			(justify left bottom)
 		)
 		(uuid "0f64c310-f260-4495-b506-499bd2b56da0")
-	)
-	(label "CLK"
-		(at 74.93 43.18 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "444acc1c-33ac-4a84-8c50-655f8391419c")
-	)
-	(label "CLK"
-		(at 38.1 114.3 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5c9c2bcb-87b7-406b-bb72-6d4a20b38a6f")
 	)
 	(label "~{RST}"
 		(at 116.84 50.8 0)
@@ -3764,6 +3807,17 @@
 		)
 		(uuid "23cb16fc-074b-407d-854b-9e30ebe18fa5")
 	)
+	(hierarchical_label "CLK"
+		(shape output)
+		(at 231.14 62.23 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "606a4989-626e-4468-8312-184fb2050eb7")
+	)
 	(hierarchical_label "~{M1}"
 		(shape output)
 		(at 38.1 121.92 180)
@@ -3808,6 +3862,17 @@
 		)
 		(uuid "6d79097f-c94b-4e34-a346-1854637b3084")
 	)
+	(hierarchical_label "~{INT}"
+		(shape input)
+		(at 220.98 62.23 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7c19e799-a303-40fc-b7ca-501e7e799851")
+	)
 	(hierarchical_label "~{MREQ}"
 		(shape output)
 		(at 38.1 127 180)
@@ -3829,6 +3894,17 @@
 			(justify left)
 		)
 		(uuid "877af6f8-abf7-48f6-aa04-2cf7f990f9d5")
+	)
+	(hierarchical_label "CLK"
+		(shape output)
+		(at 38.1 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c5170159-ac05-4245-8355-6ebfe496e057")
 	)
 	(hierarchical_label "~{INT}"
 		(shape input)
@@ -4469,6 +4545,72 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
+		(at 220.98 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "168b77a4-6356-4e8a-983f-b24a1730ac4e")
+		(property "Reference" "#PWR0216"
+			(at 220.98 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 218.44 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 220.98 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eaf6be7f-642c-4bd1-b806-6d3a89b91900")
+		)
+		(instances
+			(project "zed-80"
+				(path "/3141ac47-310a-4fc3-ab78-4d4b51ab76a4/8027ce25-6d64-43c4-92ed-291bb3daa7a1"
+					(reference "#PWR0216")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
 		(at 52.07 107.95 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4796,6 +4938,75 @@
 			(project "zed-80"
 				(path "/3141ac47-310a-4fc3-ab78-4d4b51ab76a4/8027ce25-6d64-43c4-92ed-291bb3daa7a1"
 					(reference "Y201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 220.98 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "31c1b817-9a07-4f1b-bc7c-d0ab97d7f95a")
+		(property "Reference" "R204"
+			(at 222.25 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10 kΩ"
+			(at 222.25 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 221.996 51.054 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 220.98 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1283f347-aa12-44f0-a154-535c3cad737e")
+		)
+		(pin "2"
+			(uuid "2bb18464-e0e1-48ae-8b6f-2a6e27457287")
+		)
+		(instances
+			(project "zed-80"
+				(path "/3141ac47-310a-4fc3-ab78-4d4b51ab76a4/8027ce25-6d64-43c4-92ed-291bb3daa7a1"
+					(reference "R204")
 					(unit 1)
 				)
 			)
@@ -5653,6 +5864,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 231.14 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9a76f6a5-096a-4199-8d95-19d3359e44c2")
+		(property "Reference" "R205"
+			(at 232.41 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1 kΩ"
+			(at 232.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 232.156 51.054 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 231.14 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 231.14 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "96143b53-9d6f-46fd-831d-5593bf309175")
+		)
+		(pin "2"
+			(uuid "0eccdcda-93a0-4470-b0a0-cf143ab29ecd")
+		)
+		(instances
+			(project "zed-80"
+				(path "/3141ac47-310a-4fc3-ab78-4d4b51ab76a4/8027ce25-6d64-43c4-92ed-291bb3daa7a1"
+					(reference "R205")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 114.3 62.23 0)
 		(unit 1)
@@ -5969,7 +6249,7 @@
 				)
 			)
 		)
-		(property "Value" "1 MΩ"
+		(property "Value" "2 kΩ"
 			(at 48.26 31.75 90)
 			(effects
 				(font
@@ -6083,6 +6363,72 @@
 			(project "zed-80"
 				(path "/3141ac47-310a-4fc3-ab78-4d4b51ab76a4/8027ce25-6d64-43c4-92ed-291bb3daa7a1"
 					(reference "C203")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 231.14 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "deede678-4069-47a9-a367-b0616f452c7c")
+		(property "Reference" "#PWR0217"
+			(at 231.14 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 228.6 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 231.14 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d84b6c1e-25be-4255-9f49-434dc712af3c")
+		)
+		(instances
+			(project "zed-80"
+				(path "/3141ac47-310a-4fc3-ab78-4d4b51ab76a4/8027ce25-6d64-43c4-92ed-291bb3daa7a1"
+					(reference "#PWR0217")
 					(unit 1)
 				)
 			)
