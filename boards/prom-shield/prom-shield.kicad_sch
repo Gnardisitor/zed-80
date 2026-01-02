@@ -4841,16 +4841,6 @@
 		)
 		(uuid "2527d64f-ce41-41e6-ab21-6e36176be6c8")
 	)
-	(label "D[0..7]"
-		(at 76.2 148.59 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "27aeeeed-1154-4de7-bec5-046184225c2d")
-	)
 	(label "A5"
 		(at 144.78 64.77 0)
 		(effects
@@ -5100,6 +5090,16 @@
 			(justify left bottom)
 		)
 		(uuid "7db9ca79-f184-479e-9a6e-043de4349dc7")
+	)
+	(label "D[0..7]"
+		(at 76.2 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7eafdc90-bc35-4180-ab3c-57f689c4b7df")
 	)
 	(label "RCLK"
 		(at 110.49 64.77 0)

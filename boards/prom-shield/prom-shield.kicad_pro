@@ -606,7 +606,7 @@
       },
       {
         "netclass": "Data",
-        "pattern": "/D?"
+        "pattern": "/D*"
       },
       {
         "netclass": "Control",
@@ -627,7 +627,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "/home/dbajan/Documents/PCB/zed-80/docs/schematics/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -738,7 +738,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "/home/dbajan/Documents/PCB/zed-80/docs/schematics/",
     "space_save_all_events": true,
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
