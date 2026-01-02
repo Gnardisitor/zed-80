@@ -59,7 +59,16 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "silk_edge_clearance|164710000|47870000|a1531b39-8dae-4637-9a8d-49791182f594|afabb8c7-2cf9-4107-801f-9a53812760a4",
+          "Cannot change this due to shield. Pre-configured this way from shield template."
+        ],
+        [
+          "silk_edge_clearance|164830000|47990000|a1531b39-8dae-4637-9a8d-49791182f594|7e4f65c7-e4e4-48f1-83e5-b078ab5cb465",
+          "Cannot change this due to shield. Pre-configured this way from shield template."
+        ]
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -91,7 +100,7 @@
         "items_not_allowed": "error",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "warning",
+        "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
@@ -129,12 +138,12 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.0,
-        "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.075,
+        "min_clearance": 0.152,
+        "min_connection": 0.152,
+        "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.0,
-        "min_hole_to_hole": 0.25,
+        "min_hole_clearance": 0.254,
+        "min_hole_to_hole": 0.254,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
@@ -142,10 +151,10 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.2,
-        "min_via_annular_width": 0.05,
-        "min_via_diameter": 0.4,
-        "solder_mask_to_copper_clearance": 0.0,
+        "min_track_width": 0.152,
+        "min_via_annular_width": 0.15,
+        "min_via_diameter": 0.6,
+        "solder_mask_to_copper_clearance": 0.1,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -257,7 +266,32 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "lib_symbol_mismatch|444500|723900|00000000-0000-0000-0000-000056d72f1c|00000000-0000-0000-0000-000000000000|||",
+        "Changed to include pin names."
+      ],
+      [
+        "lib_symbol_mismatch|457200|419100|00000000-0000-0000-0000-000056d71773|00000000-0000-0000-0000-000000000000|||",
+        "Changed to include pin names."
+      ],
+      [
+        "lib_symbol_mismatch|698500|419100|00000000-0000-0000-0000-000056d72368|00000000-0000-0000-0000-000000000000|||",
+        "Changed to include pin names."
+      ],
+      [
+        "lib_symbol_mismatch|698500|723900|00000000-0000-0000-0000-000056d734d0|00000000-0000-0000-0000-000000000000|||",
+        "Changed to include pin names."
+      ],
+      [
+        "power_pin_not_driven|406400|444500|c45740d7-6bd2-426f-a4e0-1a2cde2aefc3|00000000-0000-0000-0000-000000000000|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55|",
+        "No issues with VCC."
+      ],
+      [
+        "power_pin_not_driven|406400|495300|3f3d45c5-95c7-4e8d-be34-12d81e69c802|00000000-0000-0000-0000-000000000000|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55|/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55|",
+        "No issues with GND."
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -462,7 +496,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -505,6 +539,51 @@
         "via_diameter": 0.6,
         "via_drill": 0.4,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "Address",
+        "pcb_color": "rgb(129, 243, 255)",
+        "priority": 3,
+        "schematic_color": "rgb(129, 243, 255)",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "Control",
+        "pcb_color": "rgb(255, 163, 50)",
+        "priority": 2,
+        "schematic_color": "rgb(255, 163, 50)",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "Data",
+        "pcb_color": "rgb(32, 149, 255)",
+        "priority": 4,
+        "schematic_color": "rgb(32, 149, 255)",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "Ground",
+        "pcb_color": "rgb(134, 149, 175)",
+        "priority": 0,
+        "schematic_color": "rgb(134, 149, 175)",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "Power",
+        "pcb_color": "rgb(255, 78, 81)",
+        "priority": 1,
+        "schematic_color": "rgb(255, 78, 81)",
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -512,7 +591,36 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Power",
+        "pattern": "VCC"
+      },
+      {
+        "netclass": "Ground",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Address",
+        "pattern": "/A*"
+      },
+      {
+        "netclass": "Data",
+        "pattern": "/D?"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "/~{*"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "/*CLK"
+      },
+      {
+        "netclass": "Control",
+        "pattern": "/SER"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
