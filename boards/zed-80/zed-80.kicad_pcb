@@ -9,6 +9,8 @@
 	(paper "A4")
 	(title_block
 		(title "zed-80")
+		(date "2026-02-14")
+		(rev "A")
 		(company "Dragos Bajanica")
 	)
 	(layers
