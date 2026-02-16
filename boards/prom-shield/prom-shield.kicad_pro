@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.508
+          "min_clearance": 0.4
         }
       },
       "diff_pair_dimensions": [
@@ -524,7 +524,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.152,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -627,7 +627,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "/home/dbajan/Documents/PCB/zed-80/docs/schematics/",
+      "plot": "../../docs/fabrication/prom-shield/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
