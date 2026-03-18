@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Memory")
-		(date "2026-01-01")
-		(rev "B")
+		(date "2026-03-17")
+		(rev "C")
 		(company "Dragos Bajanica")
 	)
 	(lib_symbols
@@ -5378,7 +5378,7 @@
 				)
 			)
 		)
-		(property "Value" "TT74LS32BI"
+		(property "Value" "74LS32"
 			(at 80.518 39.878 0)
 			(effects
 				(font
@@ -5481,7 +5481,7 @@
 				)
 			)
 		)
-		(property "Value" "TT74LS32BI"
+		(property "Value" "74LS32"
 			(at 80.518 65.278 0)
 			(effects
 				(font
@@ -5928,7 +5928,7 @@
 				)
 			)
 		)
-		(property "Value" "TT74LS32BI"
+		(property "Value" "74LS32"
 			(at 99.568 67.818 0)
 			(effects
 				(font
@@ -6097,7 +6097,7 @@
 				)
 			)
 		)
-		(property "Value" "TT74LS32BI"
+		(property "Value" "74LS32"
 			(at 80.518 52.578 0)
 			(effects
 				(font
@@ -6825,7 +6825,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "TT74LS32BI"
+		(property "Value" "74LS32"
 			(at 39.37 46.99 0)
 			(effects
 				(font

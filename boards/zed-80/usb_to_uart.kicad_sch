@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "USB-to-UART")
-		(date "2026-01-01")
-		(rev "B")
+		(date "2026-03-17")
+		(rev "C")
 		(company "Dragos Bajanica")
 	)
 	(lib_symbols
@@ -4531,7 +4531,7 @@
 			(uuid "ce7c853b-f432-45e7-8734-527e9f8fac0a")
 		)
 		(instances
-			(project ""
+			(project "zed-80"
 				(path "/3141ac47-310a-4fc3-ab78-4d4b51ab76a4/0dd3bd4c-9936-4de5-a023-cfe1468865a6"
 					(reference "D401")
 					(unit 1)
@@ -4556,7 +4556,7 @@
 				)
 			)
 		)
-		(property "Value" "GD74LS04"
+		(property "Value" "74HCT04"
 			(at 58.42 85.09 0)
 			(effects
 				(font
@@ -5414,7 +5414,7 @@
 			(uuid "88cbb43a-e982-4d77-8350-f54023d36837")
 		)
 		(instances
-			(project ""
+			(project "zed-80"
 				(path "/3141ac47-310a-4fc3-ab78-4d4b51ab76a4/0dd3bd4c-9936-4de5-a023-cfe1468865a6"
 					(reference "#PWR0413")
 					(unit 1)
