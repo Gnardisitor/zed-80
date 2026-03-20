@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "CPU")
-		(date "2026-03-17")
+		(date "2026-03-20")
 		(rev "C")
 		(company "Dragos Bajanica")
 	)
@@ -2218,7 +2218,7 @@
 		)
 		(uuid "f43682ae-69e2-40f0-9f09-cf5cf6621a05")
 	)
-	(text_box "Power is provided to the unused inverters to ensure they remain stable at all times. This prevents them from picking up any static signals.\n\nThe interrupt control line requires to be pulled up to VBUS to ensure it does not float. This is due to the M68B50P's interrupt pin being open drain, so leaving the line floating.\n\nAn extra pull-up for the clock is added due to the 74LS04 being weaker and only producing a maximum output voltage of 3.4V, which is not enough for a CMOS chip. "
+	(text_box "Power is provided to the unused inverters to ensure they remain stable at all times. This prevents them from picking up any static signals.\n\nThe interrupt control line requires to be pulled up to VBUS to ensure it does not float. This is due to the M68B50P's interrupt pin being open drain, so leaving the line floating. "
 		(exclude_from_sim no)
 		(at 241.3 25.4 0)
 		(size 26.67 50.8)
