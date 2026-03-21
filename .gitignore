@@ -1,6 +1,7 @@
 # ALTIUM
 
 # Directories containing cache data
+.history
 History
 __Previews
 
